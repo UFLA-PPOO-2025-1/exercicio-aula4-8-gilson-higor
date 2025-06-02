@@ -61,6 +61,10 @@ public class Simulador
         visao = new VisaoDeGrafico(800, 400, 500);
         GeradorDePopulacoes.definirCores(visao);
         visoes.add(visao);
+
+        visao = new VisaoDeTexto();
+        GeradorDePopulacoes.definirCores(visao);
+        visoes.add(visao);
         
         // Configura um ponto de partida válido.
         reiniciar();
@@ -101,7 +105,7 @@ public class Simulador
         passo++;
 
         // Fornece espaço para os animais recém-nascidos.
-        List<Animal> novosAnimais = new ArrayList<>(); 
+        List<Ator> novosAnimais = new ArrayList<>(); 
         // Permite que todos os ns ajam.
         for(Iterator<Animal> it = animais.iterator(); it.hasNext(); ) {
             Animal animal = it.next();
@@ -167,4 +171,5 @@ public class Simulador
             // acorda
         }
     }
+    
 }
