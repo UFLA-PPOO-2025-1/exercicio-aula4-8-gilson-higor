@@ -105,7 +105,7 @@ public class Simulador
         passo++;
 
         // Fornece espaço para os animais recém-nascidos.
-        List<Animal> novosAnimais = new ArrayList<>(); 
+        List<Ator> novosAnimais = new ArrayList<>(); 
         // Permite que todos os ns ajam.
         for(Iterator<Animal> it = animais.iterator(); it.hasNext(); ) {
             Animal animal = it.next();
